@@ -1,4 +1,4 @@
-# get parent base image ubantu
+# get parent base image ubuntu
 FROM ubuntu:20.04
 
 # install required packages for building litex
@@ -12,5 +12,6 @@ RUN apt-get -y update && \
         automake \
         autoconf \
         make \
+	verilator \
         gzip && \
     rm -rf /var/lib/apt/lists/*
